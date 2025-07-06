@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+    @apply bg-gray-100 text-gray-800;
+}
+
+.login-box {
+    @apply bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-24;
+}
+
+/* Input Field */
+.input-field {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm 
+           focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-sm;
+}
+
+/* Button Primary */
+.btn-primary {
+    @apply w-full bg-indigo-600 text-white py-2 px-4 rounded-md 
+           hover:bg-indigo-700 transition;
+}
+
+/* Tabs */
+.tab-active {
+    border-bottom: 2px solid #4f46e5;
+    color: #4f46e5;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.tab-inactive {
+    color: #6b7280;
+    padding: 0.5rem 1rem;
+}
+
+/* Tab content animation */
+.tab-content {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.btn-edit {
+    @apply bg-yellow-600 hover:bg-yellow-700 text-white text-xs px-3 py-1 rounded shadow;
+}
+.btn-save {
+    @apply bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm shadow;
+}
